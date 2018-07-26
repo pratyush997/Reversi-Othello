@@ -1,0 +1,67 @@
+* {
+    margin: auto;
+    font-family: Georgia;
+}
+
+
+body {
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+tr:nth-child(2n+1) td:nth-child(2n) {
+    background-color: #ddf;
+}
+
+tr:nth-child(2n) td:nth-child(2n+1) {
+    background-color: #ddf;
+}
+
+td {
+    width: 55px;
+    height: 55px;
+    background-color: #cce;
+}
+
+    td .disc {
+        width: 50px;
+        height: 50px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        transition: linear 0.5s;
+    }
+
+        td .disc.black {
+            background-color: black;
+        }
+
+        td .disc.white {
+            background-color: white;
+        }
+
+    td.suggestTiles .disc {
+        background-color: rgba(0,0,255, 0.15);
+    }
+
+
+#score #colorTurn {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+#pass {
+    margin: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
+    align-content: center;
+    font-size: large;
+    font-weight: 600;
+}
